@@ -1,0 +1,55 @@
+site_name: Internet des Objets
+site_author: OperaMetrix
+site_description: Documentation OperaMetrix
+copyright: Copyright © 2023 OperaMetrix
+
+use_directory_urls: false
+
+docs_dir: 'docs'
+site_dir: 'site'
+
+theme:
+  name: material
+  palette:
+    primary: blue grey
+  language: fr
+  logo: images/favicon.png
+  favicon: images/favicon.png
+  include_sidebar: true
+  features:
+    - navigation.tabs
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - codehilite
+  - toc
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - courses/index.md
+  - courses/projet.md
+  - courses/TP1.md
+  - courses/TP2.md
+  - courses/TP3.md
+  - courses/TP4.md
+  - courses/TP5.md
