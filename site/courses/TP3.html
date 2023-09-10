@@ -17,7 +17,7 @@
     
     
       
-        <title>Stockage - Internet des Objets</title>
+        <title>Traitement - Internet des Objets</title>
       
     
     
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stockage" class="md-skip">
+        <a href="#traitement" class="md-skip">
           Aller au contenu
         </a>
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stockage
+              Traitement
             
           </span>
         </div>
@@ -255,7 +255,7 @@
 
   <li class="md-tabs__item">
     <a href="TP3.html" class="md-tabs__link md-tabs__link--active">
-      Stockage
+      Traitement
     </a>
   </li>
 
@@ -267,7 +267,7 @@
 
   <li class="md-tabs__item">
     <a href="TP4.html" class="md-tabs__link">
-      Visualisation
+      Stockage
     </a>
   </li>
 
@@ -279,6 +279,18 @@
 
   <li class="md-tabs__item">
     <a href="TP5.html" class="md-tabs__link">
+      Visualisation
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="TP6.html" class="md-tabs__link">
       Application
     </a>
   </li>
@@ -392,9 +404,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Traitement
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="TP3.html" class="md-nav__link md-nav__link--active">
-        Stockage
+        Traitement
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#script-de-traitement-temps-reel" class="md-nav__link">
+    Script de traitement temps-réel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geofencing" class="md-nav__link">
+    Geofencing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-red" class="md-nav__link">
+    Node-RED
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -409,7 +466,7 @@
   
     <li class="md-nav__item">
       <a href="TP4.html" class="md-nav__link">
-        Visualisation
+        Stockage
       </a>
     </li>
   
@@ -424,6 +481,21 @@
   
     <li class="md-nav__item">
       <a href="TP5.html" class="md-nav__link">
+        Visualisation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TP6.html" class="md-nav__link">
         Application
       </a>
     </li>
@@ -450,6 +522,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#script-de-traitement-temps-reel" class="md-nav__link">
+    Script de traitement temps-réel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geofencing" class="md-nav__link">
+    Geofencing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-red" class="md-nav__link">
+    Node-RED
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -462,7 +563,62 @@
                 
 
 
-<h1 id="stockage">Stockage</h1>
+<h1 id="traitement">Traitement</h1>
+<h2 id="script-de-traitement-temps-reel">Script de traitement temps-réel</h2>
+<p>Modifiez le script d'exemple ou reparter du squelette de script que vous avez créé afin de réaliser le traitement temps-réel :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">paho.mqtt.client</span> <span class="k">as</span> <span class="nn">mqtt</span>
+
+<span class="c1"># The callback for when the client receives a CONNACK response from the server.</span>
+<span class="k">def</span> <span class="nf">on_connect</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">userdata</span><span class="p">,</span> <span class="n">flags</span><span class="p">,</span> <span class="n">rc</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Connected with result code &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">rc</span><span class="p">))</span>
+
+    <span class="c1"># Subscribing in on_connect() means that if we lose the connection and</span>
+    <span class="c1"># reconnect then subscriptions will be renewed.</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="s2">&quot;$SYS/#&quot;</span><span class="p">)</span>
+
+<span class="c1"># The callback for when a PUBLISH message is received from the server.</span>
+<span class="k">def</span> <span class="nf">on_message</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">userdata</span><span class="p">,</span> <span class="n">msg</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">topic</span><span class="o">+</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">payload</span><span class="p">))</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">mqtt</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span>
+<span class="n">client</span><span class="o">.</span><span class="n">on_connect</span> <span class="o">=</span> <span class="n">on_connect</span>
+<span class="n">client</span><span class="o">.</span><span class="n">on_message</span> <span class="o">=</span> <span class="n">on_message</span>
+
+<span class="n">client</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;mqtt.eclipseprojects.io&quot;</span><span class="p">,</span> <span class="mi">1883</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Blocking call that processes network traffic, dispatches callbacks and</span>
+<span class="c1"># handles reconnecting.</span>
+<span class="c1"># Other loop*() functions are available that give a threaded interface and a</span>
+<span class="c1"># manual interface.</span>
+<span class="n">client</span><span class="o">.</span><span class="n">loop_forever</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="geofencing">Geofencing</h2>
+<p>Si vous voulez réaliser une moyenne par quartier, vous allez devoir faire du geofencing, c'est à dire savoir si un point est inclus dans un polygon.</p>
+<p>Afin de réaliser cette fonction, vous pouvez vous aider de la librairie géométrique Shapely :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">shapely.geometry</span> <span class="kn">import</span> <span class="n">Polygon</span><span class="p">,</span> <span class="n">Point</span>
+
+<span class="n">hyde_park_coordinates</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="mf">51.509764</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.189529</span><span class="p">),</span>
+    <span class="p">(</span><span class="mf">51.512819</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.159570</span><span class="p">),</span>
+    <span class="p">(</span><span class="mf">51.504451</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.152143</span><span class="p">),</span>
+    <span class="p">(</span><span class="mf">51.502639</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.187329</span><span class="p">),</span>
+    <span class="p">(</span><span class="mf">51.509764</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.189529</span><span class="p">),</span>
+<span class="p">]</span>
+<span class="n">hyde_park</span> <span class="o">=</span> <span class="n">Polygon</span><span class="p">(</span><span class="n">hyde_park_coordinates</span><span class="p">)</span>
+<span class="n">someone_inside</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mf">51.505278</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.159479</span><span class="p">)</span>
+<span class="n">someone_outside</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mf">51.496443</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.176218</span><span class="p">)</span>
+
+<span class="n">hyde_park</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">someone_inside</span><span class="p">)</span>  <span class="c1"># returns True</span>
+<span class="n">hyde_park</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">someone_outside</span><span class="p">)</span>  <span class="c1"># returns False</span>
+</code></pre></div>
+<h2 id="node-red">Node-RED</h2>
+<p><a href="https://nodered.org/">Node-RED</a> is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.</p>
+<p>It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.</p>
+<div class="video-wrapper">
+  <iframe width="600" height="400" src="https://www.youtube.com/embed/ksGeUD26Mw0?si=z7TfqhILpUl_hobG" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>Vous pouvez utiliser le logiciel Node-RED en complément de votre script python afin de réaliser d'autres traitements.</p>
 
 
 
@@ -497,13 +653,13 @@
       
       
         
-        <a href="TP4.html" class="md-footer__link md-footer__link--next" aria-label="Suivant: Visualisation" rel="next">
+        <a href="TP4.html" class="md-footer__link md-footer__link--next" aria-label="Suivant: Stockage" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              Visualisation
+              Stockage
             </div>
           </div>
           <div class="md-footer__button md-icon">

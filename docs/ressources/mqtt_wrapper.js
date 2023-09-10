@@ -1,11 +1,11 @@
 var mqtt;
 var reconnectTimeout = 2000;
 
-var host = "iot.eclipse.org";
-var port = 443;
+var host = "192.168.1.86";
+var port = 9001;
 var path = "/mqtt/";
 
-var useTLS = true;
+var useTLS = false;
 var username = null;
 var password = null;
 var cleansession = true;
@@ -33,7 +33,7 @@ function MQTTconnect() {
 
 function onConnect() {
 	console.log("Connected to " + host);
-	mqtt.subscribe("apsio/test/#");
+	mqtt.subscribe("#");
 }
 
 function onConnectionLost(response) {

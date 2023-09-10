@@ -255,7 +255,7 @@
 
   <li class="md-tabs__item">
     <a href="TP3.html" class="md-tabs__link">
-      Stockage
+      Traitement
     </a>
   </li>
 
@@ -267,7 +267,7 @@
 
   <li class="md-tabs__item">
     <a href="TP4.html" class="md-tabs__link">
-      Visualisation
+      Stockage
     </a>
   </li>
 
@@ -279,6 +279,18 @@
 
   <li class="md-tabs__item">
     <a href="TP5.html" class="md-tabs__link">
+      Visualisation
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="TP6.html" class="md-tabs__link">
       Application
     </a>
   </li>
@@ -362,9 +374,102 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Architecture
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="TP1.html" class="md-nav__link md-nav__link--active">
         Architecture
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation-de-larchitecture" class="md-nav__link">
+    Présentation de l'architecture
+  </a>
+  
+    <nav class="md-nav" aria-label="Présentation de l'architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mosquitto" class="md-nav__link">
+    1 - Mosquitto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-script-python-de-simulation" class="md-nav__link">
+    2 - Script python de simulation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-script-python-de-traitement-temps-reel" class="md-nav__link">
+    3 - Script python de traitement temps-réel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-serveur-web-nginx" class="md-nav__link">
+    4 - Serveur web nginx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-application-web-javascript" class="md-nav__link">
+    5 - Application web javascript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-script-python-dhistorisation" class="md-nav__link">
+    6 - Script python d'historisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-base-de-donnee-timeseries-influxdb" class="md-nav__link">
+    7 - Base de donnée timeseries : Influxdb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-interface-de-visualisation-grafana" class="md-nav__link">
+    8 - Interface de visualisation : Grafana
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -394,7 +499,7 @@
   
     <li class="md-nav__item">
       <a href="TP3.html" class="md-nav__link">
-        Stockage
+        Traitement
       </a>
     </li>
   
@@ -409,7 +514,7 @@
   
     <li class="md-nav__item">
       <a href="TP4.html" class="md-nav__link">
-        Visualisation
+        Stockage
       </a>
     </li>
   
@@ -424,6 +529,21 @@
   
     <li class="md-nav__item">
       <a href="TP5.html" class="md-nav__link">
+        Visualisation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TP6.html" class="md-nav__link">
         Application
       </a>
     </li>
@@ -450,6 +570,83 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation-de-larchitecture" class="md-nav__link">
+    Présentation de l'architecture
+  </a>
+  
+    <nav class="md-nav" aria-label="Présentation de l'architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mosquitto" class="md-nav__link">
+    1 - Mosquitto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-script-python-de-simulation" class="md-nav__link">
+    2 - Script python de simulation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-script-python-de-traitement-temps-reel" class="md-nav__link">
+    3 - Script python de traitement temps-réel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-serveur-web-nginx" class="md-nav__link">
+    4 - Serveur web nginx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-application-web-javascript" class="md-nav__link">
+    5 - Application web javascript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-script-python-dhistorisation" class="md-nav__link">
+    6 - Script python d'historisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-base-de-donnee-timeseries-influxdb" class="md-nav__link">
+    7 - Base de donnée timeseries : Influxdb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-interface-de-visualisation-grafana" class="md-nav__link">
+    8 - Interface de visualisation : Grafana
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -463,6 +660,32 @@
 
 
 <h1 id="architecture">Architecture</h1>
+<h2 id="presentation-de-larchitecture">Présentation de l'architecture</h2>
+<p>Voici l'architecture que nous allons mettre en oeuvre dans le cadre de ce module.
+Une machine virtuelle sous Debian va vous être attribué par groupe et disponible sur le réseau local de la salle.</p>
+<p><img alt="Architecture de l'infrastructure" src="/images/archi_TP.png" /></p>
+<h3 id="1-mosquitto">1 - Mosquitto</h3>
+<p>Eclipse Mosquitto is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers.</p>
+<p>The MQTT protocol provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for Internet of Things messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers.</p>
+<p>The Mosquitto project also provides a C library for implementing MQTT clients, and the very popular mosquitto_pub and mosquitto_sub command line MQTT clients.</p>
+<h3 id="2-script-python-de-simulation">2 - Script python de simulation</h3>
+<p>Le script python de simulation doit permettre d'émuler une flotte de capteurs au format de votre application.
+A partir des données de l'open data de Toulouse Métropole, vous allez pouvoir simuler cette flotte de capteurs avec des métadonnées réalistes.</p>
+<h3 id="3-script-python-de-traitement-temps-reel">3 - Script python de traitement temps-réel</h3>
+<p>Le script de traitement temps-réel doit permettre de réaliser un traitement sur les données "à la volée".
+L'idée est de faire un traitement mathématique sur un flux temps-réel ou sur plusieurs flux temps-réel.
+Par exemple, à l'aide du polygon d'un quartier de Toulouse, vous pouvez calculer la moyenne par quartier et venir publier ce nouveau flux en MQTT.</p>
+<h3 id="4-serveur-web-nginx">4 - Serveur web nginx</h3>
+<p>Le serveur web nginx va servir via le protocole HTTP le site web que nous allons développer dans le cadre de votre application.</p>
+<h3 id="5-application-web-javascript">5 - Application web javascript</h3>
+<p>Nous vous fournissons deux fichiers (HTML &amp; JS) afin d'avoir un squelette de base. A vous de les améliorer et de les faire évoluer en fonction de votre cas d'usage.</p>
+<h3 id="6-script-python-dhistorisation">6 - Script python d'historisation</h3>
+<p>Le script d'historisation doit s'abonner à des flux temps-réel et venir faire des insertions en base de donnée Influxdb.</p>
+<h3 id="7-base-de-donnee-timeseries-influxdb">7 - Base de donnée timeseries : Influxdb</h3>
+<p>Nous allons stocker dans cette base de donnée timeseries, les données qui proviennent de flux temps réel MQTT.</p>
+<h3 id="8-interface-de-visualisation-grafana">8 - Interface de visualisation : Grafana</h3>
+<p>Grafana est une interface web qui permet de créer des tableaux de bord à partir des données de Influxdb.
+Libre à vous de créer un tableau de bord pertinent en fonction de votre cas d'usage.</p>
 
 
 

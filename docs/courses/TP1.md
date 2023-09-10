@@ -1,1 +1,48 @@
 # Architecture
+
+## Présentation de l'architecture
+
+Voici l'architecture que nous allons mettre en oeuvre dans le cadre de ce module.
+Une machine virtuelle sous Debian va vous être attribué par groupe et disponible sur le réseau local de la salle.
+
+![Architecture de l'infrastructure](/images/archi_TP.png)
+
+### 1 - Mosquitto
+
+Eclipse Mosquitto is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers.
+
+The MQTT protocol provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for Internet of Things messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers.
+
+The Mosquitto project also provides a C library for implementing MQTT clients, and the very popular mosquitto_pub and mosquitto_sub command line MQTT clients.
+
+### 2 - Script python de simulation
+
+Le script python de simulation doit permettre d'émuler une flotte de capteurs au format de votre application.
+A partir des données de l'open data de Toulouse Métropole, vous allez pouvoir simuler cette flotte de capteurs avec des métadonnées réalistes.
+
+### 3 - Script python de traitement temps-réel
+
+Le script de traitement temps-réel doit permettre de réaliser un traitement sur les données "à la volée".
+L'idée est de faire un traitement mathématique sur un flux temps-réel ou sur plusieurs flux temps-réel.
+Par exemple, à l'aide du polygon d'un quartier de Toulouse, vous pouvez calculer la moyenne par quartier et venir publier ce nouveau flux en MQTT.
+
+### 4 - Serveur web nginx
+
+Le serveur web nginx va servir via le protocole HTTP le site web que nous allons développer dans le cadre de votre application.
+
+### 5 - Application web javascript
+
+Nous vous fournissons deux fichiers (HTML & JS) afin d'avoir un squelette de base. A vous de les améliorer et de les faire évoluer en fonction de votre cas d'usage.
+
+### 6 - Script python d'historisation
+
+Le script d'historisation doit s'abonner à des flux temps-réel et venir faire des insertions en base de donnée Influxdb.
+
+### 7 - Base de donnée timeseries : Influxdb
+
+Nous allons stocker dans cette base de donnée timeseries, les données qui proviennent de flux temps réel MQTT.
+
+### 8 - Interface de visualisation : Grafana
+
+Grafana est une interface web qui permet de créer des tableaux de bord à partir des données de Influxdb.
+Libre à vous de créer un tableau de bord pertinent en fonction de votre cas d'usage.

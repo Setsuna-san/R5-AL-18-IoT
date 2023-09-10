@@ -17,7 +17,7 @@
     
     
       
-        <title>Visualisation - Internet des Objets</title>
+        <title>Application - Internet des Objets</title>
       
     
     
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#visualisation" class="md-skip">
+        <a href="#application" class="md-skip">
           Aller au contenu
         </a>
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Visualisation
+              Application
             
           </span>
         </div>
@@ -273,12 +273,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="TP5.html" class="md-tabs__link md-tabs__link--active">
+    <a href="TP5.html" class="md-tabs__link">
       Visualisation
     </a>
   </li>
@@ -287,10 +285,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="TP6.html" class="md-tabs__link">
+    <a href="TP6.html" class="md-tabs__link md-tabs__link--active">
       Application
     </a>
   </li>
@@ -423,6 +423,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="TP5.html" class="md-nav__link">
+        Visualisation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -435,12 +450,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Visualisation
+          Application
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="TP5.html" class="md-nav__link md-nav__link--active">
-        Visualisation
+      <a href="TP6.html" class="md-nav__link md-nav__link--active">
+        Application
       </a>
       
         
@@ -459,22 +474,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#configuration-du-serveur-web" class="md-nav__link">
+    Configuration du serveur web
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ajout-dune-source-de-donnee" class="md-nav__link">
-    Ajout d'une source de donnée
+  <a href="#validation-de-la-connexion-mqtt-via-websocket" class="md-nav__link">
+    Validation de la connexion MQTT via websocket
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creation-dun-tableau-de-bord" class="md-nav__link">
-    Création d'un tableau de bord
+  <a href="#prise-en-main-de-la-librairie-leaflet" class="md-nav__link">
+    Prise en main de la librairie leaflet
   </a>
   
 </li>
@@ -483,21 +498,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="TP6.html" class="md-nav__link">
-        Application
-      </a>
     </li>
   
 
@@ -529,22 +529,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#configuration-du-serveur-web" class="md-nav__link">
+    Configuration du serveur web
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ajout-dune-source-de-donnee" class="md-nav__link">
-    Ajout d'une source de donnée
+  <a href="#validation-de-la-connexion-mqtt-via-websocket" class="md-nav__link">
+    Validation de la connexion MQTT via websocket
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creation-dun-tableau-de-bord" class="md-nav__link">
-    Création d'un tableau de bord
+  <a href="#prise-en-main-de-la-librairie-leaflet" class="md-nav__link">
+    Prise en main de la librairie leaflet
   </a>
   
 </li>
@@ -563,12 +563,19 @@
                 
 
 
-<h1 id="visualisation">Visualisation</h1>
-<h2 id="installation">Installation</h2>
-<p>A l'aide du lien suivant, réalisez l'installation de Grafana :</p>
-<p>https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/</p>
-<h2 id="ajout-dune-source-de-donnee">Ajout d'une source de donnée</h2>
-<h2 id="creation-dun-tableau-de-bord">Création d'un tableau de bord</h2>
+<h1 id="application">Application</h1>
+<h2 id="configuration-du-serveur-web">Configuration du serveur web</h2>
+<p>Réalisez l'installation de nginx :</p>
+<div class="highlight"><pre><span></span><code>apt-get install nginx
+</code></pre></div>
+<p>Copiez les fichiers <a href="/ressources/index.html">index.html</a> et <a href="/ressources/mqtt_wrapper.js">mqtt_wrapper.js</a> dans le dossier /var/www/html de votre machine virtuelle.</p>
+<p>Ouvrez votre navigateur afin d'afficher la page web.</p>
+<h2 id="validation-de-la-connexion-mqtt-via-websocket">Validation de la connexion MQTT via websocket</h2>
+<p>A l'aide de la méthode console.log() en javascript, afficher les messages reçus via MQTT dans la console de développeur de votre navigateur.</p>
+<h2 id="prise-en-main-de-la-librairie-leaflet">Prise en main de la librairie leaflet</h2>
+<p><a href="https://leafletjs.com/reference.html">Leaflet</a> is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 42 KB of JS, it has all the mapping features most developers ever need.</p>
+<p>Leaflet is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to.</p>
+<p>Parcourez la documentation de la librairie de Leaflet afin de trouver les fonctions nécessaires à votre application.</p>
 
 
 
@@ -587,7 +594,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
       
         
-        <a href="TP4.html" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Stockage" rel="prev">
+        <a href="TP5.html" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Visualisation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -596,26 +603,11 @@
               <span class="md-footer__direction">
                 Précédent
               </span>
-              Stockage
+              Visualisation
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="TP6.html" class="md-footer__link md-footer__link--next" aria-label="Suivant: Application" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Application
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
