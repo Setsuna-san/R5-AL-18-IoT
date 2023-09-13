@@ -44,5 +44,17 @@ Nous allons stocker dans cette base de donnée timeseries, les données qui prov
 
 ### 8 - Interface de visualisation : Grafana
 
-Grafana est une interface web qui permet de créer des tableaux de bord à partir des données de Influxdb.
-Libre à vous de créer un tableau de bord pertinent en fonction de votre cas d'usage.
+Grafana est une interface web qui permet de créer des tableaux de bord à partir des données de Influxdb. Libre à vous de créer un tableau de bord pertinent en fonction de votre cas d'usage.
+
+# Travail à faire 
+
+## Projet
+
+Comme vu en introduction, définissez un projet IoT qui pourrait intéresser Toulouse Métropole et faites le valider par l'enseignant.
+
+## Hello world
+
+Vous aurez accès à la machine virtuelle dès le deuxième TP. D'ici là :
+. Installez un broker MQTT comme mosquitto
+. Réalisez un script python qui va y publier dans un topic que vous définirez
+. Réalisez un autre script qui va s'abonner au topic précédent, réaliser un traitement (calcul moyenne glisssante, max, min, autre) et publiez le résultat sur le broker.
