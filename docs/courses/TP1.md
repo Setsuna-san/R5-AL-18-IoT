@@ -56,6 +56,7 @@ Comme vu en introduction, définissez un projet IoT qui pourrait intéresser Tou
 
 Vous aurez accès à la machine virtuelle dès le deuxième TP. D'ici là :
 
-. Installez le broker MQTT mosquitto
-. Réalisez un script python qui va y publier dans un topic que vous définirez
-. Réalisez un autre script qui va s'abonner au topic précédent, réaliser un traitement (calcul moyenne glisssante, max, min, autre) et publiez le résultat sur le broker.
+1. Installez le broker MQTT mosquitto
+2. Réalisez un script python qui va y publier dans un topic que vous définirez
+3. Réalisez un autre script qui va s'abonner au topic précédent, réaliser un traitement (calcul moyenne glisssante, max, min, autre) et publiez le résultat sur le broker.
+4. Vérifiez que tout est opérationnel en vous abonnant au dernier topic.
