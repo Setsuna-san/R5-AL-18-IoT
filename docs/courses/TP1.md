@@ -50,11 +50,12 @@ Grafana est une interface web qui permet de créer des tableaux de bord à parti
 
 ## Projet
 
-Comme vu en introduction, définissez un projet IoT qui pourrait intéresser Toulouse Métropole et faites le valider par l'enseignant.
+Comme vu en introduction, définissez un projet IoT qui pourrait intéresser Toulouse Métropole et faites le valider par l'enseignant. Il faut aussi que vous définissiez le format de _payload_ que votre objet va renvoyer.
 
 ## Hello world
 
 Vous aurez accès à la machine virtuelle dès le deuxième TP. D'ici là :
-. Installez un broker MQTT comme mosquitto
+
+. Installez le broker MQTT mosquitto
 . Réalisez un script python qui va y publier dans un topic que vous définirez
 . Réalisez un autre script qui va s'abonner au topic précédent, réaliser un traitement (calcul moyenne glisssante, max, min, autre) et publiez le résultat sur le broker.
