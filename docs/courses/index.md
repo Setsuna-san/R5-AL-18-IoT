@@ -4,7 +4,9 @@ L'Internet des objets ou IdO (en anglais (the) Internet of Things ou IoT) est l'
 
 L'objectif de ce parcours de formation est de vous apporter les connaissances et les compétences nécessaires afin d'exercer le métier d'architecte et de développeur IoT.
 
-Il vient en complément du module IoT de S3 dans lequel vous vous êtes placé du côté de l'objet. Ici vous serz du côté application.
+Il vient en complément du module IoT de S3 dans lequel vous vous êtes placé du côté de l'objet. En effet, vous avez vu comment programmer un objet, lui ajouter un capteur, lui faire envoyer des données en LoRaWAN, récupérer les données via MQTT, etc.
+
+Ici vous serez du côté application.
 
 ## Compétences à acquérir
 ---
