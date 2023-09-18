@@ -1,8 +1,9 @@
-# Architecture
+# Quelle architecture ?
 
 ## Présentation de l'architecture
 
 Voici l'architecture que nous allons mettre en oeuvre dans le cadre de ce module.
+
 Une machine virtuelle sous Debian va vous être attribué par groupe et disponible sur le réseau local de la salle.
 
 ![Architecture de l'infrastructure](/images/archi_TP.png)
