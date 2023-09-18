@@ -1,4 +1,6 @@
-# Application
+# Livrable attendu
+
+Votre livrable consiste aussi en une application web qui sera hébergée sur la VM.
 
 ## Configuration du serveur web
 
