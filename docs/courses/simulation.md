@@ -1,8 +1,8 @@
-# Collecte
+# Simuler des capteurs
 
 ## Objectifs
 
-Les objectifs ce TP est de mettre en oeuvre l'architecture de collecte des données.
+Ici nous allons simuler les objets connectés.
 
 * Installation d'un broker MQTT
 * Configuration du broker afin d'activer les websockets
