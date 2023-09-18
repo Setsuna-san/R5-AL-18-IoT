@@ -4,7 +4,7 @@
 
 Ici nous allons voir le minimum pour simuler des objets connectés qui vont publier leurs données en MQTT. Pour cela, vous allez :
 
-* Installer un broker MQTT
+* Installer un broker MQTT (mosquitto ici)
 * Configurer le broker afin d'activer les websockets
 * Développer un script python de simulation des objets
 
@@ -16,7 +16,7 @@ Dans tous les cas, lisez bien la documentation !
 sudo apt-get install mosquitto mosquitto-clients
 ```
 
-## Utilisation de la ligne de commande afin de valider
+## Test de validation
 
 Utilisez les commandes [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html) et [mosquitto_sub](https://mosquitto.org/man/mosquitto_sub-1.html) afin de valider la bonne configuration du logiciel.
 
@@ -70,7 +70,7 @@ Redémarrage de mosquitto afin d'appliquer la configuration :
 systemctl restart mosquitto
 ```
 
-## Développement d'un script python de simulation
+## Script python de simulation
 
 A l'aide de la [librairie paho-mqtt](https://pypi.org/project/paho-mqtt/), développez un script python de simulation de l'objet connecté de votre application.
 
