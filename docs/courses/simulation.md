@@ -2,11 +2,13 @@
 
 ## Objectifs
 
-Ici nous allons simuler les objets connectés.
+Ici nous allons voir le minimum pour simuler les objets connectés.
 
 * Installation d'un broker MQTT
 * Configuration du broker afin d'activer les websockets
 * Développement d'un script python de simulation
+
+  Dans tous les cas, lisez bbien la documentation !
 
 ## Installation de Mosquitto
 
