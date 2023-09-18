@@ -48,9 +48,9 @@ markdown_extensions:
 nav:
   - courses/index.md
   - courses/projet.md
-  - courses/TP1.md
-  - courses/TP2.md
-  - courses/TP3.md
-  - courses/TP4.md
-  - courses/TP5.md
-  - courses/TP6.md
+  - courses/architecture.md
+  - courses/simulation.md
+  - courses/traitement.md
+  - courses/stockage.md
+  - courses/visualiser.md
+  - courses/application.md
