@@ -1,12 +1,12 @@
 # Le module
 
-L'Internet des objets ou IdO (en anglais (the) Internet of Things ou IoT) est l'interconnexion entre l'Internet et des objets, des lieux et des environnements physiques. L'appellation désigne un nombre croissant d'objets connectés à Internet permettant ainsi une communication entre nos biens dits physiques et leurs existences numériques. Ces formes de connexions permettent de rassembler de nouvelles masses de données sur le réseau et donc, de nouvelles connaissances et formes de savoirs.[^1]
+L'Internet des objets (en anglais (the) Internet of Things ou IoT) est l'interconnexion entre l'Internet et des objets, des lieux et des environnements physiques. L'appellation désigne un nombre croissant d'objets connectés à Internet permettant ainsi une communication entre nos biens dits physiques et leurs existences numériques. Ces formes de connexions permettent de rassembler de nouvelles masses de données sur le réseau et donc, de nouvelles connaissances et formes de savoirs.[^1]
 
 L'objectif de ce parcours de formation est de vous apporter les connaissances et les compétences nécessaires afin d'exercer le métier d'architecte et de développeur IoT.
 
 Il vient en complément du module IoT de S3 dans lequel vous vous êtes placé du côté de l'objet. En effet, vous avez vu comment programmer un objet, lui ajouter un capteur, lui faire envoyer des données en LoRaWAN, récupérer les données via MQTT, etc.
 
-Ici vous serez du côté application.
+Ici vous serez du côté application. Vous aurez ainsi vu toute la chaîne IoT !
 
 ## Compétences à acquérir
 ---
@@ -40,7 +40,7 @@ Voici les compétences qui vous allez acquérir dans le cadre de cette formation
 ---
 Vous devez rendre :
 - un compte-rendu de projet détaillant votre sujet, votre démarche de conception et de mise en oeuvre de la solution ;
-- la VM avec votre projet fonctionnel.
+- la VM debian avec votre projet fonctionnel.
 
 ## Mots clés
 ---
