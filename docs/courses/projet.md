@@ -1,6 +1,8 @@
-# Cas d'usage
+# Votre projet
 
 Le module est organisé sous la forme d'un projet à réaliser par groupe de 5 étudiants.
+
+Vous êtes en mode start-up et vous allez construire un projet de A à Z dans le contexte suivant.
 
 ## Smart City
 
