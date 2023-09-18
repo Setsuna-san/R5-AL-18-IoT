@@ -1,8 +1,8 @@
 # Votre projet
 
-Le module est organisé sous la forme d'un projet à réaliser par groupe de 5 étudiants.
+Le module est organisé sous la forme d'un projet à réaliser par groupe de 4 ou 5 étudiants.
 
-Vous êtes en mode start-up et vous allez construire un projet de A à Z dans le contexte suivant.
+Vous êtes en mode start-up et vous allez construire un projet de A à Z dans le contexte IoT et Smart City.
 
 ## Smart City
 
