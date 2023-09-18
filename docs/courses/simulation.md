@@ -32,6 +32,8 @@ Dans un autre terminal :
 mosquitto_pub -t "test" -m "hello" -h IP_VM
 ```
 
+Vous pouvez aussi utiliser le client graphique [MQTT-explorer](https://mqtt-explorer.com/) comme vu en S3.
+
 !!! warning "Attention"
 
     Remplacez bien IP_VM par l'adresse IP de votre machine virtuelle !
