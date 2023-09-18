@@ -2,11 +2,11 @@
 
 ## Objectifs
 
-Ici nous allons voir le minimum pour simuler les objets connectés.
+Ici nous allons voir le minimum pour simuler des objets connectés qui vont publier leurs données en MQTT. Pour cela, vous allez :
 
-* Installation d'un broker MQTT
-* Configuration du broker afin d'activer les websockets
-* Développement d'un script python de simulation des objets
+* Installer un broker MQTT
+* Configurer le broker afin d'activer les websockets
+* Développer un script python de simulation des objets
 
 Dans tous les cas, lisez bien la documentation !
 
