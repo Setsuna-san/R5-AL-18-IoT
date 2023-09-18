@@ -1,4 +1,4 @@
-# Stockage
+# Stocker les données
 
 ## Installation d'Influxdb
 
