@@ -1,4 +1,8 @@
-# Traitement
+# Traiter les données
+
+Ici nous allons voir le nécessaire pour traiter les données en temps réel. Cela peut consister en calculer une moyenne glissante, faire un calcul sur une zone géographique, etc.
+
+Le résultat de ce traitement temps réel sera ensuite publié sur le broker MQTT.
 
 ## Script de traitement temps-réel
 
@@ -57,6 +61,8 @@ hyde_park.contains(someone_outside)  # returns False
 ```
 
 ## Node-RED
+
+Une fois votre projet terminé, vous pourrez à la place des scripts utiliser NodeRed.
 
 [Node-RED](https://nodered.org/) is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
 
