@@ -13,7 +13,7 @@ Votre objectif est d'imaginer une idée de projet IoT que la collectivité pourr
 
 Afin de trouver des idées et des données réelles à exploiter, vous allez pouvoir vous rendre sur le site de l'open data de Toulouse Métropole. Les jeux de données que vous allez pouvoir récupérer vont nous permettre de simuler l'environnement de Toulouse.
 
-[ Site de l'open data de Toulouse Métropole](https://data.toulouse-metropole.fr/explore/?sort=modified){ .md-button .md-button--primary }
+[Site de l'open data de Toulouse Métropole](https://data.toulouse-metropole.fr/explore/?sort=modified){ .md-button .md-button--primary }
 
 ## Démarche projet
 

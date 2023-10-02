@@ -1,11 +1,11 @@
 # Visualiser les données
 
-## Installation
+## Installer Grafana
 
-A l'aide du lien suivant, réalisez l'installation de Grafana :
+À l'aide du lien suivant, réalisez l'installation de Grafana :
 
-https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+[https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/](https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/)
 
-## Ajout d'une source de donnée
+## Paramétrer 
 
-## Création d'un tableau de bord
+Ajouter la source de donnée et créer un tableau de bord.
