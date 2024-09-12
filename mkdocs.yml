@@ -41,7 +41,6 @@ markdown_extensions:
 
 nav:
   - index.md
-  - courses/projet.md
   - courses/architecture.md
   - courses/simulation.md
   - courses/traitement.md

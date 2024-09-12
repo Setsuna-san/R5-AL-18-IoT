@@ -10,11 +10,7 @@ Une machine virtuelle sous Debian va vous être attribué par groupe et disponib
 
 ### 1 - Mosquitto
 
-Eclipse Mosquitto is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers.
-
-The MQTT protocol provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for Internet of Things messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers.
-
-The Mosquitto project also provides a C library for implementing MQTT clients, and the very popular mosquitto_pub and mosquitto_sub command line MQTT clients.
+"Eclipse Mosquitto is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers. The MQTT protocol provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for Internet of Things messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers."
 
 ### 2 - Script python de simulation
 
@@ -47,13 +43,11 @@ Nous allons stocker dans cette base de donnée timeseries, les données qui prov
 
 Grafana est une interface web qui permet de créer des tableaux de bord à partir des données de Influxdb. Libre à vous de créer un tableau de bord pertinent en fonction de votre cas d'usage.
 
-# Travail à faire 
-
-## Projet
+## Travail à faire 
 
 Comme vu en introduction, définissez un projet IoT qui pourrait intéresser Toulouse Métropole et faites le valider par l'enseignant. Il faut aussi que vous définissiez le format de _payload_ que votre objet va renvoyer.
 
-## Hello world
+### Hello world
 
 Vous aurez accès à la machine virtuelle dès le deuxième TP. D'ici là :
 

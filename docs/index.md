@@ -1,12 +1,34 @@
 # Le module
 
-L'Internet des objets (en anglais (the) Internet of Things ou IoT) est l'interconnexion entre l'Internet et des objets, des lieux et des environnements physiques. L'appellation désigne un nombre croissant d'objets connectés à Internet permettant ainsi une communication entre nos biens dits physiques et leurs existences numériques. Ces formes de connexions permettent de rassembler de nouvelles masses de données sur le réseau et donc, de nouvelles connaissances et formes de savoirs.[^1]
+L'Internet des objets (_Internet of Things_ ou IoT) est l'interconnexion entre l'Internet et des objets, des lieux et des environnements physiques. Il est ainsi possible de stocker et traiter de grands volumes de données et donc, générer de nouvelles connaissances et formes de savoirs.[^1]
 
-L'objectif de ce parcours de formation est de vous apporter les connaissances et les compétences nécessaires afin d'exercer le métier d'architecte et de développeur IoT.
+L'objectif de ce parcours de formation est de vous apporter les connaissances et les compétences nécessaires afin d'exercer le métier d'architecte et de développeur IoT. Il vient à la suite du module IoT de S3 dans lequel vous vous êtes placé du côté de l'objet. En effet, vous avez vu comment programmer un objet, lui ajouter un capteur, lui faire envoyer des données en LoRaWAN, récupérer les données via MQTT, les stocker en base et faire quelques traitements.
 
-Il vient en complément du module IoT de S3 dans lequel vous vous êtes placé du côté de l'objet. En effet, vous avez vu comment programmer un objet, lui ajouter un capteur, lui faire envoyer des données en LoRaWAN, récupérer les données via MQTT, etc.
+Ici vous serez du côté application. Vous aurez ainsi vu toute la chaîne IoT ! Vous allez développer une application complète à partir de données réelles ou simulées.
 
-Ici vous serez du côté application. Vous aurez ainsi vu toute la chaîne IoT !
+## Votre projet Smart City
+
+Le module est organisé sous la forme d'un projet à réaliser par groupe de 4 ou 5 étudiants. Vous êtes en mode start-up et allez construire un projet de A à Z dans le contexte IoT et Smart City.
+
+Chaque groupe doit choisir un projet en lien avec la stratégie Smart City de Toulouse Métropole.
+Votre objectif est d'imaginer une idée de projet IoT que la collectivité pourrait mettre en oeuvre afin d'améliorer le quotidien de ses citoyens ou des équipes techniques de la métropole.
+
+### Récupération de données ouvertes
+
+Pour trouver des idées de projet, rendez-vous sur le site de l'open data de Toulouse Métropole :
+
+[Site de l'open data de Toulouse Métropole](https://data.toulouse-metropole.fr/explore/?sort=modified){ .md-button .md-button--primary }
+
+### Démarche projet
+
+Un projet IoT met en oeuvre des compétences très diverses, de l'électronique jusqu'au développement web en passant par les réseaux et les infrastructures. Dans le cadre de ce projet, nous allons nous concentrer sur la partie protocoles de haut-niveau, infrastructure et application web.
+
+Vous allez tout de même devoir définir à quoi peut ressembler le ou les objets connectés qui vont être mis en oeuvre par l'équipe virtuelle d'électroniciens. Vous allez également devoir vous entendre en début de projet pour définir le format des données qui vont être transmise en flux à l'entrée de votre plateforme.
+
+De cette façon chaque équipe va pouvoir avancer dans la conception de sa partie en simulant l'autre partie et vous allez pouvoir vous retrouver en phase d'intégration.
+
+!!! note "Travail par groupe"
+    Mettez-vous par groupe afin de réflechir à un sujet, trouver les jeux de données associés, définir à quoi vont ressembler les objets connectés dans votre application, le protocole et le format des messages qu'ils vont transmettre.
 
 ## Compétences à acquérir
 ---
@@ -32,24 +54,20 @@ Voici les compétences qui vous allez acquérir dans le cadre de cette formation
 * Déterminer les actions à mettre en place pour améliorer la scalabilité
 * Démarche cybersécurité
 
-!!! note "Pré-requis"
 
-    Il n'est pas nécessaire d'avoir une expérience en électronique mais des connaissances de base en informatique et en réseaux sont recommandées.
+## Livrables attendus
 
-## Modalités d'évaluation
----
 Vous devez rendre :
+
 - un compte-rendu de projet détaillant votre sujet, votre démarche de conception et de mise en oeuvre de la solution ;
 - la VM debian avec votre projet fonctionnel.
 
-## Mots clés
----
-IoT - MQTT - LoRaWAN - Architecture Lambda - Objets connectés
+
 
 ## Volume horaire
----
-Volume horaire défini : 18 heures soit 3 heures par semaine pendant 6 semaines
+
+18 heures soit 3 heures par semaine pendant 6 semaines
 
 ## Références
 [^1]: Article wikipedia, [Internet des Objets](https://fr.wikipedia.org/wiki/Internet_des_objets)
-[^2]: [Internet des objets connectés](https://www.dunod.com/sciences-techniques/internet-objets-connectes-cours-exercices-et-cas-pratiques), Cours, exercices et cas pratiques, Thierry Alhalel, Adrien van den Bossche, Remi Boulle
+[^2]: Livre [Internet des objets connectés](https://www.dunod.com/sciences-techniques/internet-objets-connectes-cours-exercices-et-cas-pratiques), Cours, exercices et cas pratiques, Thierry Alhalel, Adrien van den Bossche, Remi Boulle (disponible à la BU).
