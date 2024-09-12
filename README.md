@@ -1,10 +1,9 @@
 # Site compagnon du module IoT en S5 de l'IUT de Blagnac. 
-Département Informatique.
 
 ## Pour le visualiser
 
 * Télécharger et décompresser l'archive *.zip
-* $cd apsio_iot
+* $cd R5-AL-18-IoT-master
 * $mkdocs serve
 
 ## Pre-requis éventuels
