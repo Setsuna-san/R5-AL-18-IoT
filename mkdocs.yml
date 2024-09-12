@@ -1,7 +1,4 @@
 site_name: Internet des Objets - S5
-site_author: OperaMetrix
-site_description: Documentation OperaMetrix
-copyright: Copyright © 2023 OperaMetrix
 
 use_directory_urls: false
 
@@ -41,9 +38,6 @@ markdown_extensions:
   - codehilite
   - toc
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
   - index.md
