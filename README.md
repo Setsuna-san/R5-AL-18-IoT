@@ -1,4 +1,4 @@
-# Site compagnon du module IoT en S5 de l'IUT de Blagnac. 
+# Ressource R5-AL-18 : IoT 
 
 ## Pour le visualiser
 
