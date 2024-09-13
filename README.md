@@ -10,9 +10,9 @@
 
 ## Pre-requis éventuels
 
-sudo apt-get update
+ sudo apt-get update
 
-sudo apt install mkdocs mkdocs-material mkdocs-material-extensions
+ sudo apt install mkdocs mkdocs-material mkdocs-material-extensions
 
 ## Pour l'enseignant
 
