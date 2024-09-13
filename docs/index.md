@@ -4,7 +4,9 @@ L'Internet des objets (_Internet of Things_ ou IoT) est l'interconnexion entre l
 
 L'objectif de ce parcours de formation est de vous apporter les connaissances et les compétences nécessaires afin d'exercer le métier d'architecte et de développeur IoT. Il vient à la suite du module IoT de S3 dans lequel vous vous êtes placé du côté de l'objet (MQTT, LoRaWAN, etc.).
 
-Ici vous serez du côté application. Vous aurez ainsi vu toute la chaîne IoT[^2] ! Vous allez développer une application complète à partir de données réelles et d'autres simulées.
+Ici vous serez du côté application. Vous aurez ainsi vu toute la chaîne IoT[^2] ! 
+
+> Vous allez développer une application complète à partir de données réelles et d'autres simulées.
 
 
 ## Votre projet Smart City
@@ -12,8 +14,6 @@ Ici vous serez du côté application. Vous aurez ainsi vu toute la chaîne IoT[^
 Ce module est un projet à réaliser par groupe de 4 ou 5 personnes. Vous êtes en mode start-up et allez construire un projet de A à Z dans le contexte IoT et Smart City.
 
 > Avec les données en OpenData de Toulouse Métropole et les données de vos objets IoT, concevez l'application dont tout collectivité rêve !
-
-Votre objectif est ainsi d'imaginer une idée de projet IoT que la collectivité pourrait mettre en oeuvre afin d'améliorer le quotidien de ses citoyens ou des équipes techniques de la métropole
 
 Pour rappel, une collectivité, comme Toulouse Métropole, a pour compétences :
 
@@ -28,7 +28,7 @@ Pour rappel, une collectivité, comme Toulouse Métropole, a pour compétences :
 
 Portail open data de Toulouse Métropole :
 
-[Site de l'open data de Toulouse Métropole](https://data.toulouse-metropole.fr/explore/?sort=modified){.md-button .md-button--primary }
+[Site de l'open data de Toulouse Métropole](https://data.toulouse-metropole.fr/explore/?sort=modified){.md-button}
 
 ### Démarche projet
 
@@ -40,6 +40,14 @@ De cette façon chaque équipe va pouvoir avancer dans la conception de sa parti
 
 !!! note "Travail par groupe"
     Mettez-vous par groupe afin de réflechir à un sujet, trouver les jeux de données associés, définir à quoi vont ressembler les objets connectés dans votre application, le protocole et le format des messages qu'ils vont transmettre.
+
+### Déroulé du projet
+
+1. Définissez un sujet et faites la valider par l'enseignant
+1. Étudiez le schéma d'architecture 
+1. Commencer à rédiger le document de présentation PDF
+1. Commencez la mise en oeuvre et testez !
+1. Déployez sur votre VM de production au fur et à mesure
 
 ## Compétences à acquérir
 
