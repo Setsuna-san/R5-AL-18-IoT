@@ -1,4 +1,4 @@
-# Simuler des capteurs
+# MQTT et simuler des capteurs
 
 ## Objectifs
 
@@ -10,47 +10,46 @@ Ici nous allons voir le minimum pour simuler des objets connectés qui vont publ
 
 Dans tous les cas, lisez bien la documentation !
 
-## Installation de Mosquitto
+## Installation du broker MQTT
 
 ``` bash
 sudo apt-get install mosquitto mosquitto-clients
 ```
 
-## Test de validation
+### Test de validation
 
 Utilisez les commandes [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html) et [mosquitto_sub](https://mosquitto.org/man/mosquitto_sub-1.html) afin de valider la bonne configuration du logiciel.
 
 Par exemple, dans votre terminal :
 
 ``` bash
-mosquitto_sub -v -t "#" -h IP_VM
+mosquitto_sub -v -t "#" -h IP_du_broker_MQTT
 ```
 
 Dans un autre terminal :
 
 ``` bash
-mosquitto_pub -t "test" -m "hello" -h IP_VM
+mosquitto_pub -t "test" -m "hello" -h IP_du_broker_MQTT
+
 ```
 
-Vous pouvez aussi utiliser le client graphique [MQTT-explorer](https://mqtt-explorer.com/) comme vu en S3.
+!!! info "Astuce"
+    Vous pouvez aussi utiliser le client graphique [MQTT-explorer](https://mqtt-explorer.com/) comme vu en S3.
 
-!!! warning "Attention"
-
-    Remplacez bien IP_VM par l'adresse IP de votre machine virtuelle !
 
 !!! info "Astuce"
 
     Le projet mosquitto met à votre disposition un service de test : [test.mosquitto.org](https://test.mosquitto.org/)
 
-## Activation des websockets
+### Websockets
 
-Prenez connaissance des documentation de Mosquitto :
+Prenez connaissance de la documentation de Mosquitto :
 
 [Documentation du démon](https://mosquitto.org/man/mosquitto-8.html)
 
 [Documentation de la configuration](https://mosquitto.org/man/mosquitto-conf-5.html)
 
-Utilisez ces documentation afin d'obtenir les fonctionnalités suivantes :
+À l'aide ces documentations afin d'obtenir les fonctionnalités suivantes :
 
 * Activation d'un listener MQTT sur tcp sans TLS sur le port 1883
 * Activation d'un listener MQTT sur websocket sans TLS sur le port 9001
@@ -70,7 +69,7 @@ Redémarrage de mosquitto afin d'appliquer la configuration :
 systemctl restart mosquitto
 ```
 
-## Script python de simulation
+## Script Python de simulation
 
 A l'aide de la [librairie paho-mqtt](https://pypi.org/project/paho-mqtt/), développez un script python de simulation de l'objet connecté de votre application.
 
