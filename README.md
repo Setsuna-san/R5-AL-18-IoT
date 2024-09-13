@@ -8,8 +8,8 @@
 * dans paramètres, choisir FR pour le clavier
 * installer openssh-server
 * Dans /etc/ssh/sshd_config :
-** décommentez pour avoir : PasswordAuthentication yes
-** décommentez augmenter la valeur de : MaxAuthTries
+   * décommentez pour avoir : PasswordAuthentication yes
+   * décommentez et augmentez la valeur de : MaxAuthTries
 * systemctl restart ssh
 
 ## Pour le visualiser
