@@ -4,7 +4,7 @@
 
 ## Pour le visualiser
 
-* Télécharger et décompresser l'archive *.zip
+* Télécharger tout le code source et décompresser l'archive *.zip
 * $cd R5-AL-18-IoT-master
 * $mkdocs serve
 
