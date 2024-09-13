@@ -68,6 +68,10 @@ Vous devez rendre :
 
 18 heures soit 3 heures par semaine pendant 6 semaines
 
+## Remerciements
+
+Merci à la société [OperaMetrix](https://www.operametrix.fr/) pour son aide sur ce module ! Allez voir leur site et, peut-être, postulez !
+
 ## Références
 [^1]: Article wikipedia, [Internet des Objets](https://fr.wikipedia.org/wiki/Internet_des_objets)
 [^2]: Livre [Internet des objets connectés](https://www.dunod.com/sciences-techniques/internet-objets-connectes-cours-exercices-et-cas-pratiques), Cours, exercices et cas pratiques, Thierry Alhalel, Adrien van den Bossche, Remi Boulle (disponible à la BU).
