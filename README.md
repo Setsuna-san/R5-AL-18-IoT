@@ -12,15 +12,7 @@
 
 sudo apt-get update
 
-pip install mkdocs
-
-pip install mkdocs-material-extensions
-
-pip install pymdown-extensions
-
-pip install mkdocs-material
-
-pip install mkdocs-macros-plugin
+sudo apt install mkdocs mkdocs-material mkdocs-material-extensions
 
 ## Pour l'enseignant
 
