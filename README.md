@@ -2,11 +2,15 @@
 
 ## Pour l'enseignant
 
-* Récupérer le dernier debian (11 ici car bug affichage avec virtualbox...)
+* Récupérer la dernière debian (11 ici car bug affichage avec virtualbox...)
 * installer dans une VM sous virtualbox avec user/resu comme compte
 * configurer réseau en connexion par pont
 * dans paramètres, choisir FR pour le clavier
 * installer openssh-server
+* Dans /etc/ssh/sshd_config :
+** décommentez pour avoir : PasswordAuthentication yes
+** décommentez augmenter la valeur de : MaxAuthTries
+* systemctl restart ssh
 
 ## Pour le visualiser
 
