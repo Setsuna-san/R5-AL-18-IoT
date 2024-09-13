@@ -2,22 +2,33 @@
 
 L'Internet des objets (_Internet of Things_ ou IoT) est l'interconnexion entre l'Internet et des objets, des lieux et des environnements physiques. Il est ainsi possible de stocker et traiter de grands volumes de données et donc, générer de nouvelles connaissances et formes de savoirs.[^1]
 
-L'objectif de ce parcours de formation est de vous apporter les connaissances et les compétences nécessaires afin d'exercer le métier d'architecte et de développeur IoT. Il vient à la suite du module IoT de S3 dans lequel vous vous êtes placé du côté de l'objet. En effet, vous avez vu comment programmer un objet, lui ajouter un capteur, lui faire envoyer des données en LoRaWAN, récupérer les données via MQTT, les stocker en base et faire quelques traitements.
+L'objectif de ce parcours de formation est de vous apporter les connaissances et les compétences nécessaires afin d'exercer le métier d'architecte et de développeur IoT. Il vient à la suite du module IoT de S3 dans lequel vous vous êtes placé du côté de l'objet (MQTT, LoRaWAN, etc.).
 
-Ici vous serez du côté application. Vous aurez ainsi vu toute la chaîne IoT ! Vous allez développer une application complète à partir de données réelles ou simulées.
+Ici vous serez du côté application. Vous aurez ainsi vu toute la chaîne IoT[^2] ! Vous allez développer une application complète à partir de données réelles et d'autres simulées.
+
 
 ## Votre projet Smart City
 
-Le module est organisé sous la forme d'un projet à réaliser par groupe de 4 ou 5 étudiants. Vous êtes en mode start-up et allez construire un projet de A à Z dans le contexte IoT et Smart City.
+Ce module est un projet à réaliser par groupe de 4 ou 5 personnes. Vous êtes en mode start-up et allez construire un projet de A à Z dans le contexte IoT et Smart City.
 
-Chaque groupe doit choisir un projet en lien avec la stratégie Smart City de Toulouse Métropole.
-Votre objectif est d'imaginer une idée de projet IoT que la collectivité pourrait mettre en oeuvre afin d'améliorer le quotidien de ses citoyens ou des équipes techniques de la métropole.
+> Avec les données en OpenData de Toulouse Métropole et les données de vos objets IoT, concevez l'application dont tout collectivité rêve !
 
-### Récupération de données ouvertes
+Votre objectif est ainsi d'imaginer une idée de projet IoT que la collectivité pourrait mettre en oeuvre afin d'améliorer le quotidien de ses citoyens ou des équipes techniques de la métropole
 
-Pour trouver des idées de projet, rendez-vous sur le site de l'open data de Toulouse Métropole :
+Pour rappel, une collectivité, comme Toulouse Métropole, a pour compétences :
 
-[Site de l'open data de Toulouse Métropole](https://data.toulouse-metropole.fr/explore/?sort=modified){ .md-button .md-button--primary }
+* Services : état civil, éducation, action sociale.
+* Urbanisme : urbanisme, voirie, espaces verts.
+* Économie : soutien aux entreprises, attractivité.
+* Culture et loisirs : événements, équipements culturels et sportifs.
+* Sécurité : police municipale, prévention.
+* Environnement : gestion des déchets, protection écologique.
+* Gestion des transports en commun et mobilités.
+
+
+Portail open data de Toulouse Métropole :
+
+[Site de l'open data de Toulouse Métropole](https://data.toulouse-metropole.fr/explore/?sort=modified){.md-button .md-button--primary }
 
 ### Démarche projet
 
@@ -31,8 +42,6 @@ De cette façon chaque équipe va pouvoir avancer dans la conception de sa parti
     Mettez-vous par groupe afin de réflechir à un sujet, trouver les jeux de données associés, définir à quoi vont ressembler les objets connectés dans votre application, le protocole et le format des messages qu'ils vont transmettre.
 
 ## Compétences à acquérir
----
-Voici les compétences qui vous allez acquérir dans le cadre de cette formation :
 
 ### Spécifications et conception
 * Concevoir une architecture d'infrastructure IoT
@@ -61,8 +70,6 @@ Vous devez rendre :
 
 - un compte-rendu de projet détaillant votre sujet, votre démarche de conception et de mise en oeuvre de la solution ;
 - la VM debian avec votre projet fonctionnel.
-
-
 
 ## Volume horaire
 
