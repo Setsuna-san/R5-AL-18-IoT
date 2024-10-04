@@ -34,12 +34,9 @@ Portail open data de Toulouse Métropole :
 
 Un projet IoT met en oeuvre des compétences très diverses, de l'électronique jusqu'au développement web en passant par les réseaux et les infrastructures. Dans le cadre de ce projet, nous allons nous concentrer sur la partie protocoles de haut-niveau, infrastructure et application web.
 
-Vous allez tout de même devoir définir à quoi peut ressembler le ou les objets connectés qui vont être mis en oeuvre par l'équipe virtuelle d'électroniciens. Vous allez également devoir vous entendre en début de projet pour définir le format des données qui vont être transmise en flux à l'entrée de votre plateforme.
-
-De cette façon chaque équipe va pouvoir avancer dans la conception de sa partie en simulant l'autre partie et vous allez pouvoir vous retrouver en phase d'intégration.
 
 !!! note "Travail par groupe"
-    Mettez-vous par groupe afin de réflechir à un sujet, trouver les jeux de données associés, définir à quoi vont ressembler les objets connectés dans votre application, le protocole et le format des messages qu'ils vont transmettre.
+    Mettez-vous par groupe afin de réfléchir à un sujet, trouver les jeux de données associés, définir à quoi vont ressembler les objets connectés dans votre application, le protocole et le format des messages qu'ils vont transmettre.
 
 ### Déroulé du projet
 
@@ -47,7 +44,10 @@ De cette façon chaque équipe va pouvoir avancer dans la conception de sa parti
 1. Étudiez le schéma d'architecture 
 1. Commencer à rédiger le document de présentation PDF
 1. Commencez la mise en oeuvre et testez !
-1. Déployez sur votre VM de production au fur et à mesure
+1. Déployez sur votre conteneur Docker de production au fur et à mesure !
+
+!!! note "Docker ?"
+    Nous avons rédigé un fichier `docker-compose.yml` qui définit et permet d'instancier les services que vous allez exécuter. C'est le squelette de votre application que vous trouverez sur https://github.com/rboulle/R5-AL-18-IoT
 
 ## Compétences à acquérir
 
@@ -77,11 +77,11 @@ De cette façon chaque équipe va pouvoir avancer dans la conception de sa parti
 Vous devez rendre :
 
 - un compte-rendu de projet détaillant votre sujet, votre démarche de conception et de mise en oeuvre de la solution ;
-- la VM debian avec votre projet fonctionnel.
+- un conteneur Docker avec votre projet fonctionnel.
 
 ## Volume horaire
 
-18 heures soit 3 heures par semaine pendant 6 semaines
+6 créneaux sur 5 semaines
 
 ## Remerciements
 

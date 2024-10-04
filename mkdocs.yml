@@ -41,9 +41,7 @@ markdown_extensions:
 
 nav:
   - index.md
+  - courses/docker.md
   - courses/architecture.md
-  - courses/simulation.md
-  - courses/traitement.md
-  - courses/stockage.md
-  - courses/visualiser.md
-  - courses/application.md
+  - courses/technique.md
+
