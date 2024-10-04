@@ -18,6 +18,7 @@ function onMessageArrived(msg){
 function onConnect() {
 mqtt.subscribe("test/#"); // topic
 document.getElementById("data").innerHTML ="Connecté à "+ host;
+document.getElementById("port").innerHTML ="Lecture du port "+ port;
 }
 
 function MQTTconnect() {

@@ -26,14 +26,37 @@
 
     <style>
     #map {
-        height: 180px;
+      margin-left: 50%;
+      transform: translate(-50%);
+      width: 500px;
+        height: 400px;
+    }
+    nav {
+			width: 100%;
+			background-color: aqua;
+			height: 5%;
+			font-size: 5vh;
+			text-align: center;
+			font-weight: bolder;
+			color: rgb(223, 11, 174);
+		}
+
+    #bandeau {
+      text-align: center;
     }
     </style>
 </head>
 
 <body>
-<div id="bandeau">Mon application smart city !</div>
+  <nav >
+
+    Thomas, Thomas , Eliot, Wail, Alexis
+    
+    </nav> <br>
+<div id="bandeau">Mon application smart city !</div><br>
 <div id="map"></div>
+
+<br><br>
 <script>
     // Initialisation de la carte Leaflet
 	const map = L.map('map').setView([43.6482732, 1.3748762], 11);
@@ -52,8 +75,12 @@
     radius: 200 // rayon par défaut
 }).addTo(map);
 </script>
+<br>
+<strong>
+  Données traitées du topic MQTT test : 
 
-Données traitées du topic MQTT test : 
+</strong>
 <div id="data"></div>
+<div id="port"></div>
 </body>
 </html>
